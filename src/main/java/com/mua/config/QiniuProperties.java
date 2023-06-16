@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * @Author: ASUS XuWei
  * @Since: 2023-06-15 下午 3:44
- * @Comment:
+ * @Comment: qiniu配置属性
  */
 @Data
 @Configuration

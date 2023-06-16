@@ -9,7 +9,7 @@ import java.io.*;
 /**
  * 本地上传策略
  *
- * @author ican
+ * @Author: ASUS XuWei
  */
 @Service("localUploadStrategyImpl")
 public class LocalUploadStrategyImpl extends AbstractUploadStrategyImpl {

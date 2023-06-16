@@ -15,7 +15,7 @@ import java.io.InputStream;
 /**
  * @Author: ASUS XuWei
  * @Since: 2023-06-15 下午 3:41
- * @Comment:
+ * @Comment: qiniu上传策略
  */
 @Slf4j
 @Service("qiniuUploadStrategyImpl")

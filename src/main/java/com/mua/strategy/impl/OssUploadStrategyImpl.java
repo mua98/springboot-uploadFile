@@ -14,7 +14,7 @@ import java.io.InputStream;
 /**
  * oss上传策略
  *
- * @author ican
+ * @Author: ASUS XuWei
  */
 @Slf4j
 @Service("ossUploadStrategyImpl")

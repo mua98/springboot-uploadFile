@@ -7,7 +7,7 @@ import static com.mua.enums.StatusCodeEnum.FAIL;
 /**
  * 业务异常
  *
- * @author ican
+ * @Author: ASUS XuWei
  **/
 @Getter
 public final class ServiceException extends RuntimeException {

@@ -20,7 +20,7 @@ import java.io.InputStream;
 /**
  * cos上传策略
  *
- * @author ican
+ * @Author: ASUS XuWei
  */
 @Slf4j
 @Service("cosUploadStrategyImpl")
@@ -58,7 +58,7 @@ public class CosUploadStrategyImpl extends AbstractUploadStrategyImpl {
 
     @Override
     public String getFileAccessUrl(String filePath) {
-        String url = cosProperties.getUrl().isEmpty() ?  cosProperties.getRegion() : cosProperties.getUrl();
+        String url = cosProperties.getUrl().isEmpty() ? cosProperties.getRegion() : cosProperties.getUrl();
         return url + filePath;
     }
 
