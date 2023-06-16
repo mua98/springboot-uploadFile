@@ -1,0 +1,47 @@
+server:
+  # 端口
+  port: 8080
+
+# 文件上传策略 local、oss、cos、qiniu
+upload:
+  strategy: oss
+  local:
+    # nginx映射本地文件路径
+    url: http://你的文件上传子域名或IP/
+    # 本地文件存储路径
+    path: /usr/local/upload/
+
+  # oss存储
+  oss:
+    # 没绑定域名不填，为空
+    url: http://绑定域名/
+    # 公共云下OSS Region和Endpoint对照表 https://help.aliyun.com/document_detail/31837.htm
+    endpoint: OSS配置endpoint
+    bucketName: OSS配置bucketName
+    accessKeyId:  OSS配置accessKeyId
+    accesskeySecret: OSS配置accesskeySecret
+  # cos存储
+  cos:
+    # 没绑定域名不填，为空
+    url: https://绑定域名/
+    secretId: COS配置secretId
+    secretKey: COS配置secretKey
+    # COS region: 地域的简称请参照 https://cloud.tencent.com/document/product/436/6224
+    region: COS配置region
+    bucketName: COS配置bucketName
+  # 七牛云
+  qiniu:
+    #七牛云只有测试源站域名，所以必须绑定自己的域名
+    url: http://绑定域名/
+    bucketName: 桶名
+    accessKey:  ak
+    secretKey:  sk
+
+spring:
+  #限制文件上传大小
+  servlet:
+    multipart:
+      # 设置 上传文件的大小 默认时1MB
+      max-file-size: 100MB
+      # 设置 整个请求的大小
+      max-request-size: 100MB
